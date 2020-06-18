@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: WDD
-  Date: 2019/6/16
-  Time: 9:17
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=utf-8" language="java" %>
 <html>
 <head>
@@ -102,7 +96,7 @@
                 ,{field: 'lend_date', title: '借阅时间', width:200, sort: true}
                 ,{field: 'back_date', title: '最晚归还时间', width: 200}
                 ,{field: 'fine', title: '罚款', width: 150,templet: function(d){
-                    return d.fine=="0"?'':'<a style="font-size:1.5em;color: red;font-weight: bold">'+d.fine+'元</a>';
+                    return d.fine=="0"?'':'<a style="font-size:1.5em;color: #ff0000;font-weight: bold">'+d.fine+'元</a>';
                 }}
                 ,{fixed: 'right',title: '操作', width: 200, align:'center', toolbar: '#barDemo'}
             ]]
